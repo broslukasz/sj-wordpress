@@ -1,0 +1,25 @@
+.footerText {
+  text-align: center;
+}
+
+.footer {
+  border-top: 1px solid rgba(229,231,235,1);
+}
+
+.footer-nav > div > ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-nav li {
+  display: inline;
+}
+
+.footer-nav li a {
+  text-decoration: none;
+}

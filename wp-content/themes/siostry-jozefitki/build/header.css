@@ -1,0 +1,70 @@
+/* Menu Animation */
+@keyframes navBarShow {
+  from {left: -35vh;}
+  to {left: 0vh;}
+}
+
+.nav-items {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  background: white;
+  height: 100vh;
+  width: 35vh;
+  animation-name: navBarShow;
+  animation-duration: 0.3s;
+  border-right: 1px solid rgba(229,231,235,1);
+}
+
+.banner {
+  width: 100%;
+  height: 170px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-bar {
+  height: var(--header-height);
+  width: 100%;
+  text-align: right;
+  border-bottom: 1px solid var(--basic-border);
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(white, #ffffffcf);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.sj-logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+/* Site navigation links */
+
+.side-navigation-links * {
+  list-style-type: none;
+}
+
+.side-navigation-links ul {
+  padding: 0;
+}
+
+.side-navigation-links li {
+  width: 100%;
+  display: block;
+}
+
+.side-navigation-links a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: initial;
+}
+
+.side-navigation-links a:hover {
+  background-color: #00000009;
+}

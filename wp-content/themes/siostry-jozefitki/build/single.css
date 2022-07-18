@@ -1,0 +1,9 @@
+.sj-single-post-item {
+  margin: var(--basic-margin) 0;
+  padding-bottom: var(--small-margin);
+  border-bottom: 1px solid var(--basic-border);
+}
+
+.sj-single-post-item:last-child {
+  border-bottom: 0;
+}

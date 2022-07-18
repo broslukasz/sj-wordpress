@@ -1,0 +1,130 @@
+.sj-breadcrumbs {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sj-breadcrumbs li {
+  display: flex;
+}
+
+.sj-breadcrumbs li:before {
+    content: '';
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 6px solid black;
+    margin: auto 6px auto 10px;
+    float: left;
+    padding-right: 0.5rem;
+    color: #6c757d;
+}
+
+.sj-breadcrumbs li:first-child:before {
+  display: none;
+}
+
+.sj-breadcrumbs li a {
+  text-decoration: none;
+}
+
+.sj-page section {
+  padding: var(--basic-margin);
+  flex-grow: 1;
+}
+
+.sj-page nav {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  main sj-page-nav {
+    display: block;
+  }
+
+  .sj-page {
+    display: flex;
+  }
+
+  .sj-page nav {
+    display: block;
+    min-width: 250px;
+    padding: var(--basic-margin) 0;
+  }
+}
+
+.sj-navigation-links ul {
+  padding: 0;
+}
+
+.sj-navigation-links li {
+  list-style-type: none;
+}
+
+.sj-navigation-links a {
+  display: block;
+  padding: 10px var(--basic-margin);
+  text-decoration: none;
+  color: initial;
+}
+
+.sj-parent-nav-item li:hover {
+  background-color: var(--basic-blue-transparent);
+}
+
+.sj-parent-nav-item li {
+  width: 100px;
+}
+
+.sj-child-link li:hover {
+  background-color: var(--basic-blue-transparent);
+}
+
+/* Sidebar nav item */
+
+.sj-child-link li {
+  padding-left: 10px;
+}
+
+.sj-parent-nav-item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sj-parent-nav-item > li {
+  flex-basis: 100%;
+}
+
+.sj-parent-nav-item > div {
+  position: relative;
+}
+
+.sj-child-link {
+  flex-basis: 100%;
+  display: none;
+}
+
+.sj-child-link li {
+  width: 100%;
+}
+
+.sj-parent-nav-item input:checked + .sj-child-link {
+  display: block;
+} 
+
+.sj-parent-nav-item input {
+  margin-right: 10px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  width: 20px;
+  height: 40px;
+} 
+
+.sj-page-content {
+  margin-top: var(--basic-margin);
+}
